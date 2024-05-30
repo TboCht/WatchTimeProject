@@ -1,8 +1,3 @@
-type Item = {
-  Title: string;
-  Date: string;
-};
-
 export function isTVShow(title: string): boolean {
   // Check if the title contains at least two colons
   const colonCount = (title.match(/:/g) || []).length;
