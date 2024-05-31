@@ -1,6 +1,6 @@
 import {
   GroupedDataByProfile,
-  analyzedUserData,
+  AnalyzedUserData,
   watchTime,
 } from "../types/types";
 
@@ -37,7 +37,7 @@ export const formatDurationToWatchTime = (timeInSeconds: number): watchTime => {
 // Function to calculate total durations
 export const calculateTotalDurations = async (
   groupedData: GroupedDataByProfile[]
-): Promise<analyzedUserData[]> => {
+): Promise<Pick<AnalyzedUserData, "userName" | "totalWatchTime">[]> => {
   return groupedData.map((profileGroup) => {
     const totalSeconds = profileGroup.data.reduce((total, item) => {
       return total + parseDuration(item.Duration);

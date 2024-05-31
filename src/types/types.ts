@@ -16,9 +16,17 @@ export interface GroupedDataByProfile {
   data: FileParsedData[];
 }
 
-export interface analyzedUserData {
+export interface AnalyzedUserData {
   userName: string;
   totalWatchTime: watchTime;
+  mostWatched: AnalyzedMostWatched;
+  user_since: { years: number; days: number };
+}
+
+export interface AnalyzedMostWatched {
+  tv_show: { id: number; title: string; watchTime: number };
+  episode: { id: number; title: string; watchTime: number };
+  movie: { id: number; title: string; watchTime: number };
 }
 
 export interface watchTime {

@@ -76,7 +76,7 @@
 import { ref } from "vue";
 import { parseCSV } from "../composables/parseCSV";
 import { analyzeData } from "../composables/analysis";
-import { analyzedUserData } from "../types/types";
+import { AnalyzedUserData } from "../types/types";
 
 const fileUploaded = ref();
 
@@ -91,7 +91,7 @@ const handleFileUpload = (event: Event) => {
 };
 
 const emits = defineEmits<{
-  (e: "analysisSuccess", data: analyzedUserData[]): void;
+  (e: "analysisSuccess", data: AnalyzedUserData[]): void;
 }>();
 
 const handleAnalyzeClick = async () => {
@@ -99,6 +99,7 @@ const handleAnalyzeClick = async () => {
     try {
       const resultsParsed = await parseCSV(fileUploaded.value);
       const analyzedDataResults = await analyzeData(resultsParsed);
+
       if (analyzedDataResults.length > 0)
         emits("analysisSuccess", analyzedDataResults);
     } catch (error) {
