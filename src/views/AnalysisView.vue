@@ -1,5 +1,5 @@
 <template>
-  <div class="flex w-full justify-center p-12 flex-col gap-16">
+  <div class="flex w-full justify-center p-12 flex-col sm:gap-16 gap-10">
     <profileCard v-for="userdata in usersData" :data="userdata" />
   </div>
 </template>

@@ -1,8 +1,12 @@
 <template>
-  <div class="w-full flex px-12 py-8 items-center shadow-sm rounded-3xl gap-4">
+  <div
+    class="w-full flex px-8 py-6 sm:px-12 sm:py-8 items-center shadow-sm rounded-3xl gap-4"
+  >
     <div class="flex flex-col justify-around gap-4 flex-1">
-      <div class="font-semibold text-3xl">{{ mainText }}</div>
-      <div class="text-xl" v-if="secondaryText">{{ secondaryText }}</div>
+      <div class="font-semibold text-sm sm:text-3xl">{{ mainText }}</div>
+      <div class="sm:text-xl text-sm" v-if="secondaryText">
+        {{ secondaryText }}
+      </div>
     </div>
     <img
       :src="getIconComponent(icon)"
