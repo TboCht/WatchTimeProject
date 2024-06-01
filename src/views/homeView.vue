@@ -53,7 +53,7 @@
           type="file"
           id="input"
           @change="handleFileUpload"
-          class="sm:text-base text-xs relative m-0 block w-full min-w-0 flex-auto cursor-pointer rounded-lg border border-solid bg-clip-padding px-3 py-[0.32rem] transition duration-300 ease-in-out file:-mx-3 file:-my-[0.32rem] file:me-3 file:cursor-pointer file:overflow-hidden file:rounded-lg file:border-0 file:border-e file:border-solid file:border-inherit file:bg-blue-100 file:hover:bg-blue-500 file:hover:text-white file:transition-all file:px-3 file:py-2 file:text-surface focus:border-primary focus:text-gray-700 focus:shadow-inset focus:outline-none dark:border-white/70 dark:text-white file:dark:text-white"
+          class="sm:text-base text-xs relative m-0 block w-full min-w-0 flex-auto cursor-pointer rounded-lg border border-solid bg-clip-padding px-3 py-[0.32rem] transition duration-300 ease-in-out file:-mx-3 file:-my-[0.32rem] file:me-3 file:cursor-pointer file:overflow-hidden file:rounded-lg file:border-0 file:border-e file:border-solid file:border-inherit file:bg-blue-100 file:hover:bg-blue-500 file:hover:text-white file:transition-all file:px-3 file:py-2 file:text-surface focus:border-primary focus:text-gray-700 focus:shadow-inset focus:outline-none"
         />
         <div class="flex flex-col items-center gap-2 mt-4">
           <button
