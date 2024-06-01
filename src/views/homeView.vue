@@ -1,19 +1,19 @@
 <template>
   <div class="flex items-center justify-center px-6">
     <div
-      class="flex flex-col gap-16 sm:gap-16 items-center h-full py-16 max-w-4xl"
+      class="flex flex-col gap-16 sm:gap-36 items-center h-full py-16 max-w-7xl"
     >
-      <div class="space-y-12">
-        <h2 class="text-4xl font-bold text-gray-800">
+      <div class="space-y-8">
+        <h2 class="sm:text-7xl text-4xl font-bold text-gray-800">
           Calculate your Netflix watch time in a few clicks.
         </h2>
-        <div class="text-lg font-semibold text-gray-700 sm:text-center">
+        <div class="text-2xl text-gray-700">
           This is a free tool made as a side project. No data is collected or
           shared.
         </div>
       </div>
       <div class="space-y-8">
-        <div class="text-xl text-gray-800 mt-4 text-center">
+        <div class="text-xl font-semibold text-gray-800 mt-4 text-center">
           How does it work?
         </div>
         <div class="text-gray-700 space-y-4 w-full sm:text-base text-sm">
